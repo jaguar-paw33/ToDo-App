@@ -1,0 +1,281 @@
+
+body{
+    background-image: url('https://www.desktopbackground.org/p/2015/09/03/1005209_ultra-hd-4k-gradient-wallpapers-hd-desktop-backgrounds-3840x2400_3840x2400_h.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    margin:0;
+    margin-bottom: 50px;
+    
+}
+
+
+#container{
+    background-color: white;
+    width:60%;
+    margin:auto;
+    padding-bottom: 10px;
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwYNCAgIBgYGBgcHBwoHBwYGBg8ICRAKFREiIhURExMYHCggGBolJxMfITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0NDg0NDisZHxkrKzctKysrKysrKy0rKysrLSsrKysrKysrKysrKys3KysrKysrKys3KysrKysrKysrK//AABEIAM0A9gMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAQUHAv/EABUQAQEAAAAAAAAAAAAAAAAAAAAB/8QAGgEBAQEBAQEBAAAAAAAAAAAAAQIFAAQGA//EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIRAxEAPwDqwD5B+ACECLUIEqooICVQEqoQIqVQRFRSSoqECKigIUUERUIEBQKgVQRKqEABDSAZDQEAgSgoJUVFAQCkQFQIi1FAQCEAUECooCKhCUCqCFEUkRUMBUBQRUC5plEY73gIoFRUUEAIQEUBFSqCAhgEVFAoIpIioQlKIoCKigIqECUSqAioqAAIaaKjHaAgKCBUMAiooCFFRKAhBUCqCFBUAgEIlVFAQFBAKQhRFAqFFJQKEJQC5plBkPegVKQICglAUEBFAqAYEBFABCBKqKAglUkRUIEVFAqBVBAQgRUUARSGmipWQ0BBCBFRQEVFRIlEIEVFAQKQJVRQQEUBFqEFQFBAFBEWoQICggCkoAXNMEY73iKigICglBCCoqKgQEIAFBEVFAQoQgIpIiooCLUqoEoIQAlUBFQgAUGmlVGO0EBKoCVUIEVKoIiopJUVCBFRQEKKCIqECAoFQKoIlVCBKqKgEAhKAoIIENSoqMhoCFCkQFQIiooCAQgCggVFARUISgVQQoikiKhgKgKCAhAlVFASqlUEAIaYDHaCAigIqKCAhgEVFAoIpIgEIURQEVFAQCBKJVARUVAIqECAoJUWopIgFzURUY8aAhRUSgIQIFUEKCoBAIRKqKAgKCAUhCiKBUKKSgUISglUAEqggIQAFzToDIe9ARQKgGBARQAQgSqiggJVJEVCBFqKBUCqCAhAiooCFFAeVqECAoADnNNFRkx7hKIQIqKAgUgSqiggJVARahBUBQQBQRFqECAoIFFJQEpBUBQQAuAHOf/Z');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 0 10px 10px;
+    min-width: 440px;
+}
+
+/* HEADER */
+
+header{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-image: url('https://cdn2.slidemodel.com/wp-content/uploads/7243-01-low-poly-background-16x9-1.jpg');
+    border-bottom: 2px solid grey;
+    position: sticky;
+    top: 0px;
+    height:120px;
+}
+
+
+#main-heading{
+    margin-left:10px;
+    margin-top: 0;
+    padding-top: 30px;
+    flex-grow: 0.5;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+}
+
+#history{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: 10px;
+    align-items: center;
+    height:60px;
+    width:100px;
+    background-image: url('https://digitalsynopsis.com/wp-content/uploads/2017/02/beautiful-color-gradients-backgrounds-100-vicious-stance.png');
+    border-radius: 15px;
+}
+
+
+#history a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    color:white;
+    font-size: 1.5em;
+}
+
+
+/* HEADER END */
+
+
+form{
+    display:flex;
+    flex-flow: row wrap;
+}
+
+
+.div-head{
+    border-top: 0.5px solid #80808050;
+    border-bottom: 0.5px solid #80808050;
+    padding:60px;
+    padding-top: 40px;
+}
+
+.div-head:hover{
+    background-color: rgb(182, 223, 248);
+}
+
+
+.heading{
+    font-size: 1.5em;
+    font-family: 'Quattrocento', serif;
+    margin-bottom:20px;
+}
+
+
+input{
+    width:100%;
+    border: none;
+    margin:5px 20px 0 0;
+    background-color: inherit;
+    font-size: 1.3em;
+    outline: none;
+    
+}
+
+input[type='text']{
+    color:rgba(73, 58, 58, 0.904);
+}
+
+
+select{
+    border:none;
+    padding:0;
+    margin:0;
+    background-color: inherit;
+    font-size: 1.3em;
+    color:rgba(73, 58, 58, 0.904);
+    margin-left: -4px;
+    margin-top: 6px;
+    width:100%;
+    outline: none;
+}
+
+select:focus{
+  background-color: white;
+}
+
+input[type='date']{
+    font-size: 1.5em;
+    color: rgba(73, 58, 58, 0.904);
+    margin-left: -2px;
+    outline: none;
+}
+
+
+#description{
+   width: 100%; 
+}
+
+#category{
+    flex-grow: 0.5;
+    border-right: 0.5px solid #80808050;
+}
+
+#due-date{
+    flex-grow: 0.5;
+}
+
+@media screen and (max-width:1150px)
+{
+    #category{
+        flex-grow: 1;
+    }
+
+    #due-date{
+        flex-grow: 1;
+    }
+}
+
+
+#buttons{
+    width:100%;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+}
+
+button{
+    height:60px;
+    width:180px;
+    margin:30px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.3em;
+    color:white;
+}
+
+button:hover{
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+button i{
+    margin-right:10px;
+}
+
+#add-btn{
+    background-color:#000000cc;
+    cursor: pointer;
+}
+
+#rst-btn{
+    background-color: rgb(48, 63, 92);
+    cursor: pointer;
+}
+
+
+#delete {
+    text-decoration: none;
+}
+
+#delete div{
+    height:60px;
+    width:180px;
+    margin:30px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.3em;
+    color:white;
+    background-color: darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+
+#delete div i{
+    margin-right: 15px;
+  }
+
+#delete div:hover{
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+/* CONTENT */
+
+table{
+    width:95%;
+    margin: 30px auto;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSQP3CIAwG5pA1Ua3VsyfczCmXNVBlifET-inlyIcv5mnMh2G9N&usqp=CAU');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.todo-check{
+    width:60px;
+}
+
+input[type='checkbox']{
+    height:30px;
+    width:30px;
+    margin:10px 20px;
+}
+
+.todo-desc{
+    padding: 10px 40px;
+    font-size: 1.8em;
+    width:80%;
+    color: white;
+    font-family: 'Sniglet', cursive;
+}
+
+.todo-dew{
+    font-size: 1.8em;
+    padding:10px 40px ;
+    color:rgb(173, 173, 173);
+    font-family: serif;
+}
+
+.todo-dew i{
+   margin-right: 10px;
+}
+
+.card{
+    height:50px;
+    width:70%;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    font-size: 1.1em;
+}
+
+.row-separator{
+    border-bottom: 1.5px solid rgba(134, 126, 126, 0.342);
+}
+
+/* CONTENT END */

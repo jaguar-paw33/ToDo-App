@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/home.css">
+    
+    <title>
+        <%=title%>
+    </title>
+
+</head>
+<body>
+    
+<div id='container'>
+       
+    <header>
+        
+        <h1 id='main-heading'>TODO App</h1>
+        
+        <div id='history'>
+            
+            <a href="/history">
+                History
+            </a>
+       
+        </div>
+    
+    </header>
+
+
+    <form action="/add_task" method='POST'>
+        
+        <div id='description' class='div-head'>
+            
+            <p class='heading'>DESCRIPTION</p>
+            
+            <input type="text" name='desc' placeholder="What do you need to do?" required>
+        
+        </div>
+        
+        <div id='category' class='div-head'>
+            
+            <p class='heading'>CATEGORY</p>
+            
+            <select name="category" required>
+                
+                <option value="" selected>Choose a category</option>
+                <option value="personal">Personal</option>
+                <option value="work">Work</option>
+                <option value="school">School</option>
+                <option value="cleaning">Cleaning</option>
+                <option value="other">Other</option>
+           
+            </select>
+        
+        </div>
+        
+        <div id='due-date' class='div-head'>
+            
+            <p class='heading'>DUE DATE</p>
+            
+            <input type="date" name='due_date'>
+        
+        </div>
+        
+<!-- BUTTONS -->
+
+        <div id='buttons'>
+           
+            <button type='submit' id='add-btn'>
+                
+                <i class='fas fa-plus'></i>
+                
+                <span>ADD TASK</span> 
+           
+            </button>
+           
+            <button type='reset' id='rst-btn'>
+              
+                <i class="fas fa-sync-alt"></i>
+              
+                <span>RESET</span> 
+           
+            </button>
+       
+        </div>
+    
+    </form>
+
+   
+
+    <a href="" id='delete'>
+       
+        <div>
+            <i class="fas fa-trash-alt"></i>
+              
+            <span>DELETE</span>
+        
+        </div>
+   
+    </a>
+  
+<!-- BUTTONS END -->
+
+    <br><hr>
+
+<!-- CONTENT -->
+
+    <div id='task-list'>
+
+        <table>
+            
+            <%for(let task of tasks_list){%>
+            <tr>
+                
+                <td class='todo-check row-separator' rowspan="2">
+                    
+                    <input type="checkbox"  id='<%=task.id%>' >
+                
+                </td>
+                
+                <td class='todo-desc'>
+                   
+                    <%=task.desc%>
+                
+                </td>
+               
+                <td rowspan="2" class='todo-card row-separator'>
+                   
+                    <div class='card <%=task.category%>' >
+                        <%=task.category%>
+                    </div>
+               
+                </td>
+            
+            </tr>
+            <tr>
+                
+                <td class='todo-dew row-separator'>
+                   
+                    <i class="fas fa-calendar-alt"></i>
+                    <span></span><%=task.due_date%></span>
+               
+                </td>
+                
+            </tr>
+            
+           
+        <%}%>
+        </table>
+
+    </div>
+</div>
+
+<!-- CONTENT END -->
+
+<script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+<script src="/js/home.js"></script>
+</body>
+</html>
