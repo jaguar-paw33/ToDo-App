@@ -13,7 +13,7 @@ $('input[type="checkbox"]').click(function(){
 //separated by comma then finally attaching that href to the href of delete
 
 $('#delete').click(function(event){
-    $(this).attr('href','/delete-task/?id=') 
+    $(this).attr('href','/delete_task/?id=') 
     for(let entry of id){
     var href = $(this).attr('href');
     href+=entry+',';

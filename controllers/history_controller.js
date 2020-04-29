@@ -1,6 +1,7 @@
 const history = require('../models/history');
 
-module.exports.history = function(req,res){
+var history_tasks;
+module.exports.history_view = function(req,res){
 
     history.find({},(err,tasks)=>{
         if(err){

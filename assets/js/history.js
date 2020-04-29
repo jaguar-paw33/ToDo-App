@@ -9,7 +9,7 @@ $('#clear-history').click(function(event){
         id.push($(this).attr('id'));
     }); 
 
-    $(this).attr('href','/clear-history/?id='); 
+    $(this).attr('href','history/clear_history/?id='); 
     for(let entry of id){
     var href = $(this).attr('href');
     href+=entry+',';

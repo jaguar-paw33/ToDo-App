@@ -10,11 +10,23 @@ body{
 
 /* MAIN HEADING */
 
-h1{
-    text-align: center;
-    margin:50px;
-    font-size: 4em;
+header{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div i{
+    font-size: 3em;
     color: greenyellow;
+}
+
+h1{
+    font-size: 4em;
+  
+    color: greenyellow;
+    display: inline-block;
     font-family: 'Playfair Display', serif;
 }
 
@@ -29,18 +41,15 @@ table{
     border-radius: 5px;
 }
 
-
 .todo-check{
     width:60px;
 }
-
 
 input[type='checkbox']{
     height:30px;
     width:30px;
     margin:10px 20px;
 }
-
 
 .todo-desc{
     padding: 10px 40px;

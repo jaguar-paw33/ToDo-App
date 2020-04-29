@@ -16,12 +16,18 @@
 
 </head>
 <body>
-
+        <header>
         <h1>History</h1>
-        
+        <div>
+        <a href="/""><i class = 'fas fa-home'></i></a>
+        </div>
+        </header>
+
+
         <div id='task-list'>
 
             <table>
+                
                 <%for(let task of history_tasks){%>
                 <tr id ='<%=task.id%>' class='delete-history-helper'>
                     
@@ -55,11 +61,12 @@
                 </tr>
                 
                
-            <%}%>
+                <%}%>
+           
             </table>
             
             
-            <a href="/clear-history" id='clear-history' >
+            <a href="" id='clear-history' >
                 
                 <div>
        
