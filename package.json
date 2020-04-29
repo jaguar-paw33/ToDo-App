@@ -1,0 +1,28 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "Minor Project 1",
+  "main": "index.js",
+  "scripts": {
+    "start":"nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaguar-paw33/ToDo-App.git"
+  },
+  "keywords": [
+    "ToDO"
+  ],
+  "author": "Priyank Mishra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaguar-paw33/ToDo-App/issues"
+  },
+  "homepage": "https://github.com/jaguar-paw33/ToDo-App#readme",
+  "dependencies": {
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.10"
+  }
+}
