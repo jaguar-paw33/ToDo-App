@@ -9,10 +9,10 @@ app.use(express.static('assets'));
 
 app.use('/', require('./routes'));
 
-app.listen(port, (err)=>{
+app.listen(process.env.PORT || port, function(err){
     if(err){
-        console.log(`Error in starting Server`);
+        console.log(`Error in running the Server : ${err}`);
         return;
     }
-    console.log(`Server is up and running at Port :: ${port}`);
+    console.log(`Server is up and running on Port : ${this.address().port}`);
 })
