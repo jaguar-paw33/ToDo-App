@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/todo_db');
+const uri = process.env.MONGODB_URI;
+
+mongoose.connect(uri || 'mongodb://localhost/todo_db');
 
 const db = mongoose.connection;
 
