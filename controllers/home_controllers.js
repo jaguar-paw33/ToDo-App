@@ -9,7 +9,7 @@ module.exports.home = function(req,res){
         }
         tasks_list=tasks;
         res.render('home',{
-            title:'TODO App',
+            title:'ToDo App',
             tasks_list:tasks_list
         });
     })
